@@ -1,0 +1,23 @@
+
+#footer a {
+    color: white;
+}
+
+@media only screen and (max-width: 576px) {
+    #footer {
+        margin-top: 600px;
+
+    }
+
+    .footer-content1 {
+        margin-left: 20px;
+    }
+    
+    .footer-content2 {
+        margin-left: 80px;
+    }
+
+    #footer p {
+        width: 100%;
+    }
+}

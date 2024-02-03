@@ -1,0 +1,143 @@
+#trainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 600px;
+    
+}
+
+#trainer p {
+    font-size: 20px;
+    color: var(--font-color-sectiontext);
+    font-weight: var(--font-weight-sectiontext);
+    opacity: 0.9;
+}
+
+.trainer-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.trainer-container {
+    margin-left: 50px;
+}
+
+.trainer-content img {
+    margin: 40px;
+    border: 2px solid orange;
+    border-radius: 10px;
+}
+
+.trainer-content img:hover {
+    border-width: 4px;
+}
+
+.overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #355592;
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    width: 60%;
+}
+
+.trainer-content:hover .overlay {
+    opacity: 1; 
+}
+
+.border-bar {
+    position: absolute;
+    background-color: #355592;
+    transition: height 0.5s ease-in-out;
+}
+
+.top-bar {
+    top: 30px;
+    left: 140px;
+    right: 140px;
+    height: 10px;
+}
+
+.left-bar {
+    left: 32px;
+    top: 150px;
+    bottom: 150px;
+    width: 8px;
+    transition: 0.5s all linear;
+}
+
+.right-bar {
+    right: 32px;
+    top: 150px;
+    bottom: 150px;
+    width: 8px;
+    transition: 0.5s all linear;
+}
+
+.bottom-bar {
+    bottom: 30px;
+    left: 140px;
+    right: 140px;
+    height: 10px;
+    transition:  0.5s all linear;
+}
+
+/* Değerlendirme formu 12: Our Best Trainers alanındaki hoverların kontrol edildiği css kodları. */
+.trainer-content:hover .left-bar {
+    margin-top: -20px; 
+    margin-bottom: -20px; 
+    
+}
+
+.trainer-content:hover .right-bar {
+    margin-top: -20px; 
+    margin-bottom: -20px; 
+}
+
+.trainer-content:hover .bottom-bar {
+    margin-left: -20px; 
+    margin-right: -20px; 
+}
+
+.trainer-bottom a {
+    font-weight: 1000;
+}
+
+.card {
+    border-radius: 15px;
+    overflow: hidden; 
+    margin-top: 50px;
+}
+.combined-bars {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+@media (max-width: 576px) {
+    #trainer {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin-top: 1800px; 
+    }
+    
+    .card-group {
+        flex-direction: column; 
+    }
+    
+    .card {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .trainer-content {
+        margin-left: 50px;
+    }
+}
